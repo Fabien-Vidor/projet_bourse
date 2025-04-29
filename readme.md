@@ -32,3 +32,10 @@ NiFi : https://localhost:8443/nifi
 
 les credentials sont dans les logs  :
 docker logs -f <id_de_l_image>
+
+Pour Kafka :
+docker exec -it <id_du_container_kafka> bash
+kafka-topics --create --topic cours_bourse --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1
+kafka-topics --create --topic news_finance --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1
+
+### 5. Configurer NiFi pour router les données

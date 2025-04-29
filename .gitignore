@@ -4,3 +4,4 @@ __pycache__/
 *.log
 .env
 nifi_data/
+nifi_conf/

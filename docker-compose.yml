@@ -33,5 +33,6 @@ services:
           cpus: '2.0'       # NiFi ne prendra 2 cœur CPU max
           memory: 4G
     volumes:
+      - ./nifi_conf:/opt/nifi/nifi-current/conf
       - ./nifi_data:/opt/nifi/nifi-current/data
     restart: unless-stopped

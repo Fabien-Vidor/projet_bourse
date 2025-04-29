@@ -28,4 +28,7 @@ pip install -r requirements.txt
 ### 4. Lancer les services avec Docker
 docker-compose up -d
 
-NiFi : http://localhost:8080/nifi
+NiFi : https://localhost:8443/nifi
+
+les credentials sont dans les logs  :
+docker logs -f <id_de_l_image>

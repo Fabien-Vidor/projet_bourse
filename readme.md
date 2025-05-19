@@ -33,6 +33,10 @@ NiFi : https://localhost:8443/nifi
 les credentials sont dans les logs  :
 docker logs -f <id_de_l_image>
 
+Aller dans Process Group et load le NiFi_Flow.json
+
+Enable tout les controller services
+
 Pour Kafka :
 docker exec -it <id_du_container_kafka> bash
 kafka-topics --create --topic cours_bourse --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1
